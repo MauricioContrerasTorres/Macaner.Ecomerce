@@ -1,0 +1,6 @@
+@Macaner.Ecomerce.Services.WebApi_HostAddress = http://localhost:5058
+
+GET {{Macaner.Ecomerce.Services.WebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

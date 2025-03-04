@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.35" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="6.0.4" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.18.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.9.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.9.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.9.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.9.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.35.0" />
+  </ItemGroup>
+
+  <ItemGroup>    
+    <ProjectReference Include="..\Macaner.Ecomerce.Application.DTO\Macaner.Ecomerce.Application.DTO.csproj" />
+    <ProjectReference Include="..\Macaner.Ecomerce.Application.Interface\Macaner.Ecomerce.Application.Interface.csproj" />
+    <ProjectReference Include="..\Macaner.Ecomerce.Application.Main\Macaner.Ecomerce.Application.Main.csproj" />
+    <ProjectReference Include="..\Macaner.Ecomerce.Domain.Core\Macaner.Ecomerce.Domain.Core.csproj" />
+    <ProjectReference Include="..\Macaner.Ecomerce.Domain.Entity\Macaner.Ecomerce.Domain.Entity.csproj" />
+    <ProjectReference Include="..\Macaner.Ecomerce.Domain.Interface\Macaner.Ecomerce.Domain.Interface.csproj" />
+    <ProjectReference Include="..\Macaner.Ecomerce.Infrastructure.Data\Macaner.Ecomerce.Infrastructure.Data.csproj" />
+    <ProjectReference Include="..\Macaner.Ecomerce.Infrastructure.Interface\Macaner.Ecomerce.Infrastructure.Interface.csproj" />
+    <ProjectReference Include="..\Macaner.Ecomerce.Infrastructure.Repository\Macaner.Ecomerce.Infrastructure.Repository.csproj" />
+    <ProjectReference Include="..\Macaner.Ecomerce.Transversal.Common\Macaner.Ecomerce.Transversal.Common.csproj" />
+    <ProjectReference Include="..\Macaner.Ecomerce.Transversal.Logging\Macaner.Ecomerce.Transversal.Logging.csproj" />
+    <ProjectReference Include="..\Macaner.Ecomerce.Transversal.Mapper\Macaner.Ecomerce.Transversal.Mapper.csproj" />
+  </ItemGroup>
+
+</Project>
